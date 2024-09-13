@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styles */
+#menu {
+  width: 800px; /* Adjust width as needed */
+  margin: 50px auto; /* Center the container horizontally */
+  display: flex; /* Arrange menu cards horizontally */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: space-between; /* Distribute cards evenly */
+}
+
+/* Heading styles (optional) */
+.heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.heading h1,
+.heading h3 {
+  margin: 5px; /* Add some margin between heading elements */
+}
+
+/* Card styles */
+.card {
+  width: calc(33.33% - 20px); /* Set card width with margin */
+  margin: 10px; /* Add margin between cards */
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+  display: flex; /* Arrange image and details side-by-side */
+  flex-direction: column; /* Stack image and details vertically */
+  text-align: center; /* Center content within cards */
+}
+
+.card img {
+  width: 100%; /* Make image fill card width */
+  height: auto; /* Maintain image aspect ratio */
+  object-fit: cover; /* Crop image if necessary to fill space */
+}
+
+.details {
+  padding: 10px; /* Add padding to content area */
+}
+
+.details-sub {
+  margin-bottom: 5px; /* Add some space below sub-heading */
+}
+
+.price {
+  color: green; /* Highlight price text */
+  font-weight: bold; /* Make price stand out */
+}
+
+/* Button styles */
+.card button {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Indicate clickable button */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  padding: 10px 20px;
+  margin-top: 10px; /* Add some space above the button */
+  width: 100%; /* Make button fill card width */
+}
+
+.card button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+#about {
+  width: 800px; /* Adjust width as needed */
+  margin: 50px auto; /* Center the section horizontally */
+}
+
+/* About Us title */
+.title {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Add space below the title */
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold; /* Make the title stand out */
+}
+
+/* About Us content row */
+.about_row {
+  display: flex; /* Arrange columns side-by-side */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+/* About Us content column */
+.about_column {
+  width: 50%; /* Set column width (adjust for different layouts) */
+  padding: 20px; /* Add padding to content area */
+}
+
+/* About Us content text */
+.about_column p {
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.5; /* Improve readability with line spacing */
+  margin-bottom: 20px; /* Add some space below the text */
+}
+
+/* About Us image */
+.about_column img {
+  width: 100%; /* Make image fill column width */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+/* Learn More button */
+#btn1 {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Indicate clickable button */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  padding: 10px 20px;
+}
+
+#btn1:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.about_row P{
+  font-size: 20px;
+  color: black;
+}
+
+
+
+.about_column {
+  width: 45%; 
+  padding: 10px;
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif; /* Set a base font family */
+  line-height: 1.6; /* Improve readability with line spacing */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+/* Container styles */
+.container {
+  width: 900px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  display: flex; /* Arrange logo and navigation side-by-side */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Align vertically */
+  padding-bottom: 20px; /* Add some space below the header */
+  border-bottom: 1px solid #ddd; /* Add a subtle border */
+}
+
+.logo {
+  width: 200px; /* Adjust logo width as needed */
+}
+
+.logo img {
+  width: 100%; /* Make image fill logo container */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+#navbar {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  display: inline-block; /* Display navigation items inline */
+  margin-right: 20px; /* Add space between navigation items */
+}
+
+#navbar a {
+  text-decoration: none; /* Remove underline from links */
+  color: black;
+  font-weight: bold; /* Make link text bold */
+}
+
+#navbar a:hover {
+  color: #333; /* Change link color on hover */
+}
+
+/* Mobile menu styles (optional) */
+#mobile {
+  display: none; /* Hide by default */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center; /* Center mobile menu content */
+  }
+
+  .logo1 span {
+    font-size: 20px; /* Adjust font size as needed */
+  }
+
+  #mobile li {
+    margin: 10px 0; /* Add space between mobile menu items */
+  }
+}
+
+/* Overlay styles (optional) */
+.overlay {
+  position: relative; /* Needed for absolute positioning of content */
+}
+
+#home {
+  position: absolute; /* Position hero section content absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* 100% viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center content within hero section */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White text for better contrast */
+}
+
+.h-primary {
+  font-size: 2.5rem; /* Adjust heading size as needed */
+  margin-bottom: 15px; /* Add some space below the heading */
+}
+
+.btn {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Indicate clickable button */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  padding: 10px 20px;
+  font-weight: bold; /* Make button text bold */
+}
+
+.btn:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
